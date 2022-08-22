@@ -1,0 +1,55 @@
+#navbar {
+    background-color: var(--darkGrey);
+}
+
+#nightlife a {
+    color: var(--sky);
+    border-color: var(--sky);
+}
+
+/* card-section */
+
+#card-section {
+    background: var(--black);
+    padding-top: 1rem;
+}
+
+.card {
+    border: 2px solid var(--lightGrey);
+    background: var(--blackOpacity);
+    cursor: pointer;
+}
+
+.card-img img {
+    max-width: 100%;
+    padding: 12px;
+}
+
+.card-info-heading,
+.description {
+    margin: 0.1rem 1rem 1rem;
+    color: var(--white);
+}
+
+.card-info-heading h3 {
+    color: var(--sky);
+    font-size: 1.4rem;
+}
+
+.card-info-heading p {
+    background-color: rgb(20, 143, 20);
+    padding: 4px 10px;
+    /* font-size: 1rem; */
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+.p1 {
+    margin-bottom: 10px;
+}
+
+/* about-section */
+
+#about-section {
+    padding-top: 1rem;
+}

@@ -1,0 +1,488 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+/* reusable code */
+:root {
+    --black: #101010;
+    --white: rgb(255, 255, 255);
+    --darkGrey: rgb(54, 54, 54);
+    --sky: #22ffc0;
+    --headingFont: 'Bree Serif', serif;
+    --paraFont: 'Josefin Sans', sans-serif;
+    --blackOpacity: rgba(0, 0, 0, 0.3);
+    --lightGrey: #cecece;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bree Serif', serif;
+}
+
+.z-index {
+    z-index: -1;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-coloum {
+    flex-direction: column;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.grid-two-coloum {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-coloum {
+    grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+}
+
+.grid-four-coloum {
+    grid-template-columns: repeat(auto-fill, minmax(16.5em, 1fr));
+}
+
+main,
+section {
+    padding: 4rem 0rem 3rem;
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0px auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+}
+
+hr {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* ************** */
+/* Navigation Bar */
+/* ************** */
+
+#navbar {
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: var(--blackOpacity);
+    font-family: var(--paraFont);
+}
+
+.logo {
+    width: 20%;
+    padding: .5rem 3rem 0;
+}
+
+.logo img {
+    max-width: 6rem;
+    padding-top: 2px;
+    filter: invert(1);
+}
+
+.navigation {
+    width: 53%;
+    justify-content: space-between;
+}
+
+#navbar ul {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 0 0.rem;
+}
+
+#navbar ul li a {
+    color: var(--white);
+    display: inline-block;
+    padding: 8px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+#navbar ul li a:hover {
+    color: var(--darkGrey);
+    background-color: var(--sky);
+}
+
+.mobile-navbar-btn {
+    padding-right: 2rem;
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon {
+    font-size: 2rem;
+    color: #cecece;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+/* responsive ness in navbar */
+@media(max-width: 62em) {
+    /*width-980px */
+    /* html{
+        font-size: 80%;
+    } */
+
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    #navbar {
+        position: relative;
+    }
+
+    .navigation {
+        /* display: none; */
+
+        overflow-y: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--darkGrey);
+        top: 0;
+        left: 0;
+
+        transform: translateX(100%);
+        transition: all .5s linear;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        overflow-x: hidden;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+    }
+
+    .navigation ul li a {
+        font-size: 2rem;
+    }
+
+    .active .navigation {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+    }
+}
+.model{
+    height: 100vh;
+    width: 100wh;
+    position: absolute;
+    /* display: none; */
+}
+.modal-wraper-one, .modal-wraper-two {
+    background-color: var(--blackOpacity);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: all .4s ease-in-out;
+}
+
+.modal-content {
+    background:linear-gradient(to left, #cecece, #22ffc0);
+    width: 550px ; 
+    max-width: 90%;
+    position: relative;
+    box-shadow: 12px 12px 0px #ffa9a9, -12px -12px #ffa9a9;
+    border: 2px solid black;
+}
+.modal-content h2{
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+.modal-content label{
+    font-size: 1.2rem;
+    border: none;
+}
+
+.logIn-btn{
+   text-transform: uppercase;
+    margin: 15px 0 30px;
+    width: 100%;
+    padding: 5px 23px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    background-color: #15926f;
+    font-family: var(--headingFont);
+    border: none;
+    box-shadow: 5px 5px 10px black;
+    transition: all 0.3s ease-in-out;
+}
+.logIn-btn:hover{
+    transform: scale(1.1);
+}
+.modal-content input{
+    border: none;
+    border-radius: 5px;
+    line-height: 1.8rem;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1px 3px;
+    margin: 10px 0px;
+    transition: 0.5s ease;
+}
+.modal-content input:hover, .modal-content input:active{
+    box-shadow: 5px 5px 20px black;
+}
+.active-two{
+    transform: translateY(0%);
+    pointer-events: auto;
+}
+.active-two .modal-content {
+    pointer-events: auto;
+}
+.close-one, .close-two{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.play-btn {
+    width: 100%;
+    gap: 2rem;
+}
+
+.googlePlay img {
+    max-width: 10.8rem;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.applePlay img {
+    max-width: 10rem;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+
+.play-btn img:hover {
+    transform: scale(1.1);
+}
+
+/* about-section  */
+
+#about-section {
+    background: var(--black);
+    color: whitesmoke;
+    padding-bottom: 0;
+    padding-left: 1rem;
+}
+
+#download {
+    flex-direction: column-reverse;
+
+}
+
+#about-section h4 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    color: var(--sky);
+}
+
+#about-section ul li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--lightGrey);
+}
+
+#about-section ul li a {
+    color: var(--ligthGrey);
+}
+
+#about-section ul li a:hover {
+    color: var(--white);
+}
+
+/* footer */
+
+footer {
+    background: var(--black);
+    color: white;
+    padding-top: 1rem;
+}
+
+footer .container {
+    gap: 9rem;
+}
+
+.logo1 img {
+    padding-top: -15px;
+}
+
+.copy-right h5 {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.social a i {
+    font-size: 2rem;
+    color: var(--white);
+    margin: 0 12px;
+}
+
+/* other pages common css */
+
+#option-section {
+    background: var(--black);
+
+}
+
+#option-section .container {
+    justify-content: flex-start;
+}
+
+.option a {
+    font-family: var(--headingFont);
+    margin-left: 1.5rem;
+    padding: 15px 15px;
+    font-size: 1.4rem;
+    color: var(--lightGrey);
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s linear;
+    letter-spacing: 1px;
+}
+
+.option a:hover {
+    color: var(--sky);
+    border-color: var(--sky);
+}
+
+.option span {
+    padding: 0 0.7rem;
+}
+
+/* filter and heading section */
+
+#fliter-heading-section {
+    background: var(--black);
+    color: var(--sky);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+#fliter-heading-section .container {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#filters ul {
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+
+#filters ul li button {
+    margin-right: 1rem;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+#fliter-heading-section .container h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}

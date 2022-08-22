@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/5e35709e6d.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/common.css">
+
+    <title>Hungiries/home</title>
+</head>
+
+<body>
+    <!-- ********************-->
+    <!-- nav and main section -->
+    <!-- ********************-->
+    <header>
+        <nav id="navbar" class="flex">
+            <div class="logo">
+                <a href="#home">
+                    <img src="/images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="navigation flex">
+                <ul class="flex">
+                    <li class="item"><a href="#home">Home</a> </li>
+                    <li class="item"><a href="#about-section">About</a> </li>
+                    <li class="item"><a href="#card-section">Services</a> </li>
+                    <li class="item"><a href="#app-section"><i class="fa-solid fa-download"></i> Get the app</a> </li>
+                </ul>
+            </div>
+
+            <div class="mobile-navbar-btn">
+                <i class="fa-solid fa-bars mobile-nav-icon" name="menu-outline"></i>
+                <i class="fa-solid fa-xmark mobile-nav-icon" name="close-outline"></i>
+            </div>
+        </nav>
+
+        <main class="container flex home">
+            <div class="sign-in">
+                <span id="log-in" class="connect"><button class="login-btn">LogIn <i
+                            class="fa-solid fa-user-check"></i></button></span>
+
+                <span id="sign-up" class="connect"><button class="signup-btn">SignUp <i
+                            class="fa-solid fa-user-plus"></i></button></span>
+            </div>
+            <div class="heading flex">
+                <h1>HUNGRIES</h1>
+                <p>Discover the <span> best food & drinks</span> </p>
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search for restaurant, cuisine or a dish" class="search-input" />
+                <a href="#" class="search-btn flex">
+                    <i class="fa-solid fa-magnifying-glass" style="font-size:23px"></i>
+                </a>
+            </div>
+        </main>
+    </header>
+
+    <!-- ********************-->
+    <!--    card-section     -->
+    <!-- ********************-->
+    <section id="card-section">
+        <div class="container grid grid-three-coloum">
+            <div class="card flex">
+                <a href="orderOnline.html">
+                    <div class="card-img flex">
+                        <img src="/images/order online.jpg" alt="">
+                    </div>
+                    <div class="card-info ">
+                        <h3>Order Online</h3>
+                        <p>Stay home and order to your doorstep</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card flex">
+                <a href="dinningOut.html">
+                    <div class="card-img flex">
+                        <img src="/images/dinning out.jpg" alt="">
+                    </div>
+                    <div class="card-info ">
+                        <h3>Dinning Out</h3>
+                        <p>View the city's favourite dining venues</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card flex">
+                <a href="nightlife.html">
+                    <div class="card-img flex">
+                        <img src="/images/nightlife.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Nightlife and Clubs</h3>
+                        <p>Explore the city’s top nightlife outlets</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ********************-->
+    <!--    app-section     -->
+    <!-- ********************-->
+    <section id="app-section">
+        <div class="container grid grid-two-coloum">
+            <div class="left-side flex">
+                <h2>Restaurants in your pocket</h2>
+                <p>Order from your favorite restaurants & track on the go, with the all-new HUNGRIES app.</p>
+                <div class="play-btn flex">
+                    <div class="googlePlay">
+                        <a href="#">
+                            <img src="/images/googlePlay.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="applePlay">
+                        <a href="#">
+                            <img src="/images/applePlay.jpg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side flex ">
+                <div class="mobile-1">
+                    <img src="/images/mobile-1.webp" alt="">
+                </div>
+                <div class="mobile-2">
+                    <img src="/images/mobile-2.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ********************-->
+    <!--    about-section     -->
+    <!-- ********************-->
+    <section id="about-section">
+        <div class="container grid grid-four-coloum">
+            <div id="company">
+                <h4>COMPANY</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Hungiries Blog</a></li>
+                    <li><a href="#">Bug Bounty</a></li>
+                    <li><a href="#">Hungiries One</a></li>
+                    <li><a href="#">Hungiries Corporate</a></li>
+                    <li><a href="#">Hungiries Instamart</a></li>
+                </ul>
+            </div>
+            <div id="contact">
+                <h4>CONTACT</h4>
+                <ul>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">Partner with us</a></li>
+                    <li><a href="#">Ride with us</a></li>
+                </ul>
+            </div>
+            <div id="legal">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Refund & Cancellation</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy/a></li>
+                    <li><a href="#">Offer Terms</a></li>
+                    <li><a href="#">Phishing & Fraud</a></li>
+                    <li><a href="#">Corporate – Hungiries Money Codes Terms and Conditions</a></li>
+                    <li><a href="#">Corporate - Hungiries Discount Voucher Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div id="download" class="play-btn flex">
+                <div class="googlePlay">
+                    <a href="#">
+                        <img src="/images/googlePlay.jpg" alt="">
+                    </a>
+                </div>
+                <div class="applePlay">
+                    <a href="#">
+                        <img src="/images/applePlay.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <footer>
+        <div class="container grid grid-three-coloum">
+            <div class="logo logo1">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <div class="copy-right flex">
+                <h5>© 2022 Hungiries</h5>
+            </div>
+            <div class="social flex">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <div class="model">
+        <div class="modal-wraper-one flex">
+            <div class="modal-content flex flex-coloum">
+                <i class="fa-solid fa-xmark close-one" name="close"></i>
+                <h2>LogIn Now</h2>
+                <form action="">
+                    <div class="log-in-info">
+                        <label for="email" style="display:block ;">Email</label>
+                        <input type="email" id="email" />
+                    </div>
+                    <div class="log-in-info">
+                        <label for="password" style="display:block ;">Password</label>
+                        <input type="password" id="password" />
+                    </div>
+                    <button class="logIn-btn">Login</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="model">
+        <div class="modal-wraper-two flex">
+            <div class="modal-content flex flex-coloum">
+                <i class="fa-solid fa-xmark close-two" name="close"></i>
+                <h2>SIGN UP</h2>
+                <form action="">
+                    <div class="log-in-info">
+                        <label for="name" style="display:block ;">Name</label>
+                        <input type="text" id="name" />
+                    </div>
+                    <div class="log-in-info">
+                        <label for="number" style="display:block ;">Phone No.</label>
+                        <input type="number" id="number" />
+                    </div>
+                    <div class="log-in-info">
+                        <label for="email" style="display:block ;">Email</label>
+                        <input type="email" id="email" />
+                    </div>
+                    <div class="log-in-info">
+                        <label for="password" style="display:block ;">Password</label>
+                        <input type="password" id="password" />
+                    </div>
+                    <button class="logIn-btn">Sign Up</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/js/common.js"></script>
+</body>
+
+</html>
