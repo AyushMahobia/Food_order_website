@@ -66,7 +66,7 @@ span {
 .search-box {
     margin: 10px 34px;
     background: var(--darkGrey);
-    border-radius: 60px;
+    border-radius: 16px 0px 16px 0px;
     transform: translateY(-50%);
     border: 2px solid var(--sky);
 }
@@ -76,7 +76,7 @@ span {
     color: var(--white);
     outline: none;
     border: none;
-    border-radius: 60px;
+    border-radius: 16px 0px 16px 0px;
     line-height: 48px;
     min-width: 36rem;
     text-align: center;
@@ -86,12 +86,12 @@ span {
 
 .search-btn {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: -2px;
+    top: -1px;
     padding: 12px;
     text-decoration: none;
-    background: var(--darkGrey);
-    border-radius: 50%;
+    background: transparent;
+    border-radius: 0px 0px 16px 0px;
     color: var(--sky);
     transition: 0.4s ease;
 
@@ -126,6 +126,7 @@ span {
 }
 
 .card-img img {
+    width: 100%;
     max-width: 100%;
     border-radius: 15px;
 }
