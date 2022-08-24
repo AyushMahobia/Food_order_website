@@ -6,9 +6,9 @@
     /* overflow-x: hidden; */
 }
 
-body {
+/* body {
     overflow-x: hidden;
-}
+} */
 
 html {
     scroll-behavior: smooth;
@@ -49,6 +49,10 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.gap{
+    gap: 2rem;
 }
 
 .flex-coloum {
