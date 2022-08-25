@@ -20,7 +20,7 @@ mobile_nav.addEventListener("click", toggleNavbar);
 
 navigation.addEventListener("click", function () {
     nav_header.classList.remove("active");
-    home.classList.toggle("z-index");
+    home.classList.remove("z-index");
 })
 
 
