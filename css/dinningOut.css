@@ -2,23 +2,84 @@
     background-color: var(--darkGrey);
 }
 
-#card-section{
+#dinning a {
+    color: var(--sky);
+    border-color: var(--sky);
+}
+
+#card-section {
     background-color: var(--darkGrey);
-    /* width: 8800px; */
+    padding: 2rem 0rem 3rem;
 }
-ul{
-    overflow: hidden;
+
+#card-section .container {
+    max-width: 81rem;
+}
+
+.left-arrow,
+.right-arrow {
+    max-width: 85px;
+    max-height: 40px;
+    z-index: 99999;
+    pointer-events: auto;
+    cursor: pointer;
+    /* border: 2px solid white; */
+    border-radius: 40%;
+    background-color: var(--whiteOpacity);
+    transition: all 0.3s ease-out;
+}
+
+.left-arrow {
+    top: 55%;
+    left: 0;
+    transform: rotate(270deg);
+}
+
+.right-arrow {
+    top: 55%;
+    right: 2.5%;
+    transform: rotate(90deg);
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+    background-color: white;
+}
+
+#card-section h2 {
+    font-size: 3rem;
+    color: var(--sky);
+    letter-spacing: 0.2rem;
+    align-self: flex-start;
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+
+#card-section .description {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    color: var(--lightGrey);
+    margin: 1rem 0;
+}
+
+.card-list {
     display: flex;
+    /* transform: translateX(-20.5rem); */
+    transform: translateX(0);
+    transition: all 0.4s ease;
 }
-.card{
+
+.card {
     background-color: bisque;
-   position: relative;
+    position: relative;
     max-width: 100%;
-    width: 25rem;
-    height: 30rem;
-    /* overflow: hidden; */
+    width: 18.3rem;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: 10px;
 }
-.card img{
+
+.card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -28,13 +89,15 @@ ul{
     border-radius: inherit;
     filter: unset;
     transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
+    border-radius: 10px;
 }
-.card-info{
-    width: 100%;    
+
+.card-info {
+    width: 100%;
     position: absolute;
     margin-bottom: 10px;
     padding: .5rem 1rem;
-    background-color: red ;
+    background-color: red;
     bottom: 0;
     left: 0;
     color: var(--black);

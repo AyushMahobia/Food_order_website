@@ -16,7 +16,7 @@ const toggleNavbar = () => {
     home.classList.toggle("z-index");
     nav_header.addEventListener("wheel", preventScroll);
 };
-mobile_nav.addEventListener("click", () => toggleNavbar());
+mobile_nav.addEventListener("click", toggleNavbar);
 
 navigation.addEventListener("click", function () {
     nav_header.classList.remove("active");

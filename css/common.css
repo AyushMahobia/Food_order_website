@@ -6,9 +6,9 @@
     /* overflow-x: hidden; */
 }
 
-/* body {
+body {
     overflow-x: hidden;
-} */
+}
 
 html {
     scroll-behavior: smooth;
@@ -25,7 +25,8 @@ html {
     --headingFont: 'Bree Serif', serif;
     --paraFont: 'Josefin Sans', sans-serif;
     --blackOpacity: rgba(0, 0, 0, 0.3);
-    --lightGrey: #cecece;
+    --whiteOpacity: rgba(255, 255, 255, 0.3);
+    --lightGrey: #cecece;  
 }
 
 h1,
@@ -40,7 +41,9 @@ h6 {
 .z-index {
     z-index: -1;
 }
-
+.over-hidden{
+    overflow: hidden;
+}
 p {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -101,7 +104,12 @@ section {
     max-width: 75rem;
     margin: 0px auto;
 }
-
+.pos-absolute{
+    position: absolute;
+}
+.pos-relative{
+    position: relative;
+}
 a {
     text-decoration: none;
     cursor: pointer;
