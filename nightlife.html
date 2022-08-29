@@ -28,7 +28,7 @@
                 <ul class="flex">
                     <li class="item"><a href="index.html#home">Home</a> </li>
                     <li class="item"><a href="#about-section">About</a> </li>
-                    <li class="item"><span id="log-in" class="connect"><a href="#">LogIn <i
+                    <li class="item"><span id="log-in" class="connect login-btn"><a href="#">LogIn <i
                                     class="fa-solid fa-user-check"></i></a></span></li>
                     <li class="item"><span id="sign-up" class="connect"><a href="#">SignUp <i
                                     class="fa-solid fa-user-plus"></i></a></span></li>
@@ -57,7 +57,7 @@
             </div>
             <div class="option">
                 <a href="dinningOut.html"><i class="fa-solid fa-utensils"></i>
-                    <span>Dining Out</span>
+                    <span>Dining</span>
                 </a>
             </div>
             <div class="option" id="nightlife">
@@ -121,11 +121,11 @@
                         <p>4.0 <i class="fa-solid fa-star"></i></p>
                     </div>
                     <div class="description flex justify-content-between">
-                        <div class="des1">
+                        <div>
                             <p class="p1">North Indian, Chin..</p>
                             <p>Dharampeth, Nagpur</p>
                         </div>
-                        <div class="des2">
+                        <div>
                             <p>&#8377;1000 for two</p>
                         </div>
                     </div>
@@ -492,10 +492,58 @@
         </div>
     </footer>
 
-    
+    <!-- ********************-->
+    <!-- login & signUp Model-->
+    <!-- ********************-->    
+    <div class="model">
+        <div class="modal-wraper-one flex">
+            <div class="modal-content flex flex-coloum">
+                <i class="fa-solid fa-xmark close-one" name="close"></i>
+                <h2>LogIn Now</h2>
+                <form action="">
+                    <div class="log-in-info">
+                        <label for="email" style="display:block ;">Email</label>
+                        <input type="email" id="email" />
+                    </div>
+                    <div class="log-in-info">
+                        <label for="password" style="display:block ;">Password</label>
+                        <input type="password" id="password" />
+                    </div>
+                    <button class="logIn-btn">Login</button>
 
+                </form>
+            </div>
+        </div>
+    </div>
 
+    <div class="model">
+        <div class="modal-wraper-two flex">
+            <div class="modal-content flex flex-coloum">
+                <i class="fa-solid fa-xmark close-two" name="close"></i>
+                <h2>SIGN UP</h2>
+                <form action="">
+                    <div class="log-in-info">
+                        <label for="name" style="display:block ;">Name</label>
+                        <input type="text" id="name" />
+                    </div>
+                    <div class="log-in-info">
+                        <label for="number" style="display:block ;">Phone No.</label>
+                        <input type="number" id="number" />
+                    </div>
+                    <div class="log-in-info">
+                        <label for="email" style="display:block ;">Email</label>
+                        <input type="email" id="email" />
+                    </div>
+                    <div class="log-in-info">
+                        <label for="password" style="display:block ;">Password</label>
+                        <input type="password" id="password" />
+                    </div>
+                    <button class="logIn-btn">Sign Up</button>
 
+                </form>
+            </div>
+        </div>
+    </div>
 <script src="/js/common.js"></script>
 </body>
 

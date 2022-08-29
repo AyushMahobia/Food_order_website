@@ -3,13 +3,24 @@ const right_arrow = document.querySelector(".right-arrow");
 const card_list = document.querySelector(".card-list");
 
 let tranformStyle = card_list.style.transform;
-// console.log(tranformStyle);
-const moveLeft = () => {
-    const move = "-20.3rem";
-    if(tranformStyle != 82)
-    {
-        card_list.style.transform = "translateX(-20.3rem)";
+let move;
+let time = 0;
+
+const moveRight = () => {
+    if (time != 4) {
+        move = tranformStyle + "translateX(-18.7rem)";
+        card_list.style.transform = move;
+        tranformStyle = move;
+        time++;
     }
 }
-
+const moveLeft = () => {
+    if (time != 0) {
+        move = tranformStyle + "translateX(18.7rem)";
+        card_list.style.transform = move;
+        tranformStyle = move;
+        time--;
+    }
+}
+right_arrow.addEventListener("click", moveRight);
 left_arrow.addEventListener("click", moveLeft); 

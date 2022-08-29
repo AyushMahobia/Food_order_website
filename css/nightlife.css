@@ -34,6 +34,8 @@
 .card-info-heading h3 {
     color: var(--sky);
     font-size: 1.4rem;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 
 .card-info-heading p {

@@ -55,7 +55,7 @@ p {
 }
 
 .gap{
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .flex-coloum {
@@ -196,7 +196,7 @@ hr {
     display: none;
 }
 
-/* responsive ness in navbar */
+/********** responsive ness in navbar ************/
 @media(max-width: 62em) {
     /*width-980px */
     /* html{
@@ -213,8 +213,6 @@ hr {
     }
 
     .navigation {
-        /* display: none; */
-
         overflow-y: hidden;
         position: absolute;
         width: 100%;
@@ -256,13 +254,12 @@ hr {
     }
 }
 
-/* Model signin-login */
+/************* Model signin-login ***************/
 
 .model{
     height: 100vh;
     width: 100wh;
     position: absolute;
-    /* display: none; */
 }
 .modal-wraper-one, .modal-wraper-two {
     background-color: var(--blackOpacity);
@@ -307,9 +304,11 @@ hr {
     box-shadow: 5px 5px 10px black;
     transition: all 0.3s ease-in-out;
 }
+
 .logIn-btn:hover{
     transform: scale(1.1);
 }
+
 .modal-content input{
     border: none;
     border-radius: 5px;
@@ -320,62 +319,26 @@ hr {
     margin: 10px 0px;
     transition: 0.5s ease;
 }
+
 .modal-content input:hover, .modal-content input:active{
     box-shadow: 5px 5px 20px black;
 }
+
 .active-two{
     transform: translateY(0%);
     pointer-events: auto;
 }
+
 .active-two .modal-content {
     pointer-events: auto;
 }
+
 .close-one, .close-two{
     position: absolute;
     top: 5px;
     right: 10px;
     cursor: pointer;
     font-size: 2rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.play-btn {
-    width: 100%;
-    gap: 2rem;
-}
-
-.googlePlay img {
-    max-width: 10.8rem;
-    border-radius: 5px;
-    transition: all 0.4s ease;
-}
-
-.applePlay img {
-    max-width: 10rem;
-    border-radius: 5px;
-    transition: all 0.4s ease;
-}
-
-
-.play-btn img:hover {
-    transform: scale(1.1);
 }
 
 /* about-section  */
@@ -386,7 +349,9 @@ hr {
     padding-bottom: 0;
     padding-left: 1rem;
 }
-
+/* #about-section .container{
+    max-width: 60rem;
+} */
 #download {
     flex-direction: column-reverse;
 
@@ -413,12 +378,32 @@ hr {
     color: var(--white);
 }
 
+.play-btn {
+    width: 100%;
+    gap: 2rem;
+}
+
+.googlePlay img {
+    max-width: 10.8rem;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.applePlay img {
+    max-width: 10rem;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.play-btn img:hover {
+    transform: scale(1.1);
+}
 /* footer */
 
 footer {
     background: var(--black);
     color: white;
-    padding-top: 1rem;
+    padding:0;
 }
 
 footer .container {
@@ -440,7 +425,7 @@ footer .container {
     margin: 0 12px;
 }
 
-/* other pages common css */
+/*********** other pages common css **********/
 
 #option-section {
     background: var(--black);
@@ -500,4 +485,5 @@ footer .container {
 #fliter-heading-section .container h1 {
     font-size: 2rem;
     letter-spacing: 1px;
+    font-weight: 100;
 }

@@ -8,12 +8,8 @@
 }
 
 #card-section {
-    background-color: var(--darkGrey);
-    padding: 2rem 0rem 3rem;
-}
-
-#card-section .container {
-    max-width: 81rem;
+    background-color: var(--black);
+    padding: 0rem 0rem 3rem;
 }
 
 .left-arrow,
@@ -23,7 +19,6 @@
     z-index: 99999;
     pointer-events: auto;
     cursor: pointer;
-    /* border: 2px solid white; */
     border-radius: 40%;
     background-color: var(--whiteOpacity);
     transition: all 0.3s ease-out;
@@ -31,7 +26,7 @@
 
 .left-arrow {
     top: 55%;
-    left: 0;
+    left: 0.5%;
     transform: rotate(270deg);
 }
 
@@ -47,17 +42,17 @@
 }
 
 #card-section h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--sky);
     letter-spacing: 0.2rem;
     align-self: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     font-weight: 100;
 }
 
 #card-section .description {
     align-self: flex-start;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--lightGrey);
     margin: 1rem 0;
 }
@@ -73,10 +68,11 @@
     background-color: bisque;
     position: relative;
     max-width: 100%;
-    width: 18.3rem;
-    height: 25rem;
+    width: 17.25rem;
+    height: 20rem;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 10px; 
+    border: none;
 }
 
 .card img {
@@ -85,21 +81,39 @@
     object-fit: cover;
     transform: none;
     opacity: 1;
-    will-change: transform, opacity;
-    border-radius: inherit;
-    filter: unset;
-    transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
-    border-radius: 10px;
+    border: none; border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.card img:hover{
+    transform: scale(1.1);
 }
 
-.card-info {
+.card-info-one {
     width: 100%;
     position: absolute;
-    margin-bottom: 10px;
-    padding: .5rem 1rem;
-    background-color: red;
     bottom: 0;
     left: 0;
-    color: var(--black);
-    /* z-index:11; */
+    color: white;
+    margin-bottom: 10px;
+    padding: .5rem 1rem;
+    background:linear-gradient(to right,rgba(0,0,0), transparent);
+}
+
+.card-info-one h3{
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.3rem;
+}
+
+/* second card-section (same as nightlife page)*/
+
+#card-section-two {
+    background: var(--black);
+    padding-top: 1rem;
+}
+
+.card-two {
+    border: 2px solid var(--lightGrey);
+    background: var(--blackOpacity);
+    cursor: pointer;
 }

@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/5e35709e6d.js" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="/css/nightlife.css">
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/dinningOut.css">
 
@@ -28,7 +28,7 @@
                 <ul class="flex">
                     <li class="item"><a href="index.html#home">Home</a> </li>
                     <li class="item"><a href="#about-section">About</a> </li>
-                    <li class="item"><span id="log-in" class="connect"><a href="#">LogIn <i
+                    <li class="item"><span id="log-in" class="connect login-btn"><a href="#">LogIn <i
                                     class="fa-solid fa-user-check"></i></a></span></li>
                     <li class="item"><span id="sign-up" class="connect"><a href="#">SignUp <i
                                     class="fa-solid fa-user-plus"></i></a></span></li>
@@ -49,7 +49,7 @@
 
         <div class="flex container">
             <div class="option">
-                <a href="">
+                <a href="#">
                     <i class="fa-solid fa-truck"></i>
                     <span>Delivery</span>
                 </a>
@@ -60,8 +60,8 @@
                     <span>Dining</span>
                 </a>
             </div>
-            <div class="option" id="nightlife">
-                <a href="#">
+            <div class="option">
+                <a href="nightlife.html">
                     <i class="fa-solid fa-champagne-glasses"></i>
                     <span>Nightlife</span>
                 </a>
@@ -70,9 +70,113 @@
     </main>
 
     <!-- **************************-->
+    <!--  card section -->
+    <!-- ***************************-->
+    <section id="card-section">
+
+        <div class="container flex flex-coloum pos-relative over-hidden">
+            <h2>Colletions</h2>
+            <p class="description">Explore curated lists of top restaurants, cafes, pubs, and bars in Nagpur, based on
+                trends</p>
+            <img src="/images/arrow.png" alt="" class="left-arrow pos-absolute">
+            <img src="/images/arrow.png" alt="" class="right-arrow pos-absolute">
+            <ul class="container gap card-list">
+                <li>
+                    <div class="card">
+                        <a href="#">
+                            <img src="/images/newOpen.avif" alt="" class="card-img">
+                            <div class="card-info-one">
+                                <h3>Newly Opened</h3>
+                                <p>5 places ></p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <a href="#">
+                            <img src="/images/best_of_rjn.jfif" alt="" class="card-img">
+                            <div class="card-info-one">
+                                <h3>Best of Nagpur</h3>
+                                <p>17 Places ></p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <a href="#">
+                            <img src="/images/trending_this_week.jfif" alt="" class="card-img">
+                            <div class="card-info-one">
+                                <h3>Trending This Week</h3>
+                                <p>30 Places ></p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <a href="#">
+                            <img src="/images/on_the_outstrike.jpg" alt="" class="card-img">
+                            <div class="card-info-one">
+                                <h3>On the Outskirts</h3>
+                                <p>14 Places ></p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <a href="#">
+                            <img src="/images/live_sport.jpg" alt="" class="card-img">
+                            <div class="card-info-one">
+                                <h3>Live Sports Screenings</h3>
+                                <p>20 Places ></p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <a href="#">
+                            <img src="/images/sweets.jpg" alt="" class="card-img">
+                            <div class="card-info-one">
+                                <h3>Sweet Tooth</h3>
+                                <p>5 places ></p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <a href="#">
+                            <img src="/images/must_visit.jfif" alt="" class="card-img">
+                            <div class="card-info-one">
+                                <h3>Must-Visit Restaurants..</h3>
+                                <p>9 places ></p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <a href="#">
+                            <img src="/images/insta_worthy.avif" alt="" class="card-img">
+                            <div class="card-info-one">
+                                <h3>insta-Worthy</h3>
+                                <p>7 places ></p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- **************************-->
     <!--  filter and heading section -->
     <!-- ***************************-->
-    <!-- <section id="fliter-heading-section">
+    <section id="fliter-heading-section">
         <div class="container">
             <div id="filters">
                 <ul class="flex">
@@ -103,111 +207,376 @@
             </div>
             <h1>Best Dining Restaurants near you in Rajnandgaon</h1>
         </div>
-    </section> -->
-
-    <!-- **************************-->
-    <!--  card section -->
-    <!-- ***************************-->
-    <section id="card-section">
-
-        <div class="container flex flex-coloum pos-relative over-hidden">
-            <h2>Colletions</h2>
-            <p class="description">Explore curated lists of top restaurants, cafes, pubs, and bars in Nagpur, based on trends</p>
-            <img src="/images/arrow.png" alt="" class="left-arrow pos-absolute">
-            <img src="/images/arrow.png" alt="" class="right-arrow pos-absolute">
-            <ul class="container gap card-list">
-                <li>
-                    <div class="card">
-                        <a href="#">
-                            <img src="/images/newOpen.avif" alt="" class="card-img">
-                            <div class="card-info">
-                                <h3>Newly Opened</h3>
-                                <p>5 places ></p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <a href="#">
-                            <img src="/images/best_of_rjn.jfif" alt="" class="card-img">
-                            <div class="card-info">
-                                <h3>Newly Opened</h3>
-                                <p>5 places ></p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <a href="#">
-                            <img src="/images/trending_this_week.jfif" alt="" class="card-img">
-                            <div class="card-info">
-                                <h3>Newly Opened</h3>
-                                <p>5 places ></p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <a href="#">
-                            <img src="/images/on_the_outstrike.jpg" alt="" class="card-img">
-                            <div class="card-info">
-                                <h3>Newly Opened</h3>
-                                <p>5 places ></p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <a href="#">
-                            <img src="/images/live_sport.jpg" alt="" class="card-img">
-                            <div class="card-info">
-                                <h3>Newly Opened</h3>
-                                <p>5 places ></p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <a href="#">
-                            <img src="/images/sweets.jpg" alt="" class="card-img">
-                            <div class="card-info">
-                                <h3>Newly Opened</h3>
-                                <p>5 places ></p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <a href="#">
-                            <img src="/images/must_visit.jfif" alt="" class="card-img">
-                            <div class="card-info">
-                                <h3>Newly Opened</h3>
-                                <p>5 places ></p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <a href="#">
-                            <img src="/images/insta_worthy.avif" alt="" class="card-img">
-                            <div class="card-info">
-                                <h3>Newly Opened</h3>
-                                <p>5 places ></p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
     </section>
+
+    <section id="card-section-two">
+        <div class="grid grid-three-coloum container">
+            <div class="card-two">
+                <div class="card-img flex">
+                    <img src="/images/order online.jpg" alt="">
+                </div>
+                <div class="card-info ">
+                    <div class="card-info-heading flex justify-content-between">
+                        <h3>Uptown 501</h3>
+                        <p>4.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <div class="description flex justify-content-between">
+                        <div>
+                            <p class="p1">North Indian, Chin..</p>
+                            <p>Dharampeth, Nagpur</p>
+                        </div>
+                        <div>
+                            <p>&#8377;1000 for two</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-two">
+                <div class="card-img flex">
+                    <img src="/images/order online.jpg" alt="">
+                </div>
+                <div class="card-info ">
+                    <div class="card-info-heading flex justify-content-between">
+                        <h3>Uptown 501</h3>
+                        <p>4.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <div class="description flex justify-content-between">
+                        <div>
+                            <p class="p1">North Indian, Chin..</p>
+                            <p>Dharampeth, Nagpur</p>
+                        </div>
+                        <div>
+                            <p>&#8377;1000 for two</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-two">
+                <div class="card-img flex">
+                    <img src="/images/order online.jpg" alt="">
+                </div>
+                <div class="card-info ">
+                    <div class="card-info-heading flex justify-content-between">
+                        <h3>Uptown 501</h3>
+                        <p>4.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <div class="description flex justify-content-between">
+                        <div>
+                            <p class="p1">North Indian, Chin..</p>
+                            <p>Dharampeth, Nagpur</p>
+                        </div>
+                        <div>
+                            <p>&#8377;1000 for two</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-two">
+                <div class="card-img flex">
+                    <img src="/images/order online.jpg" alt="">
+                </div>
+                <div class="card-info ">
+                    <div class="card-info-heading flex justify-content-between">
+                        <h3>Uptown 501</h3>
+                        <p>4.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <div class="description flex justify-content-between">
+                        <div>
+                            <p class="p1">North Indian, Chin..</p>
+                            <p>Dharampeth, Nagpur</p>
+                        </div>
+                        <div>
+                            <p>&#8377;1000 for two</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-two">
+                <div class="card-img flex">
+                    <img src="/images/order online.jpg" alt="">
+                </div>
+                <div class="card-info ">
+                    <div class="card-info-heading flex justify-content-between">
+                        <h3>Uptown 501</h3>
+                        <p>4.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <div class="description flex justify-content-between">
+                        <div>
+                            <p class="p1">North Indian, Chin..</p>
+                            <p>Dharampeth, Nagpur</p>
+                        </div>
+                        <div>
+                            <p>&#8377;1000 for two</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-two">
+                <div class="card-img flex">
+                    <img src="/images/order online.jpg" alt="">
+                </div>
+                <div class="card-info ">
+                    <div class="card-info-heading flex justify-content-between">
+                        <h3>Uptown 501</h3>
+                        <p>4.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <div class="description flex justify-content-between">
+                        <div>
+                            <p class="p1">North Indian, Chin..</p>
+                            <p>Dharampeth, Nagpur</p>
+                        </div>
+                        <div>
+                            <p>&#8377;1000 for two</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-two">
+                <div class="card-img flex">
+                    <img src="/images/order online.jpg" alt="">
+                </div>
+                <div class="card-info ">
+                    <div class="card-info-heading flex justify-content-between">
+                        <h3>Uptown 501</h3>
+                        <p>4.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <div class="description flex justify-content-between">
+                        <div>
+                            <p class="p1">North Indian, Chin..</p>
+                            <p>Dharampeth, Nagpur</p>
+                        </div>
+                        <div>
+                            <p>&#8377;1000 for two</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-two">
+                <div class="card-img flex">
+                    <img src="/images/order online.jpg" alt="">
+                </div>
+                <div class="card-info ">
+                    <div class="card-info-heading flex justify-content-between">
+                        <h3>Uptown 501</h3>
+                        <p>4.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <div class="description flex justify-content-between">
+                        <div>
+                            <p class="p1">North Indian, Chin..</p>
+                            <p>Dharampeth, Nagpur</p>
+                        </div>
+                        <div>
+                            <p>&#8377;1000 for two</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-two">
+                <div class="card-img flex">
+                    <img src="/images/order online.jpg" alt="">
+                </div>
+                <div class="card-info ">
+                    <div class="card-info-heading flex justify-content-between">
+                        <h3>Uptown 501</h3>
+                        <p>4.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <div class="description flex justify-content-between">
+                        <div>
+                            <p class="p1">North Indian, Chin..</p>
+                            <p>Dharampeth, Nagpur</p>
+                        </div>
+                        <div>
+                            <p>&#8377;1000 for two</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-two">
+                <div class="card-img flex">
+                    <img src="/images/order online.jpg" alt="">
+                </div>
+                <div class="card-info ">
+                    <div class="card-info-heading flex justify-content-between">
+                        <h3>Uptown 501</h3>
+                        <p>4.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <div class="description flex justify-content-between">
+                        <div>
+                            <p class="p1">North Indian, Chin..</p>
+                            <p>Dharampeth, Nagpur</p>
+                        </div>
+                        <div>
+                            <p>&#8377;1000 for two</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-two">
+                <div class="card-img flex">
+                    <img src="/images/order online.jpg" alt="">
+                </div>
+                <div class="card-info ">
+                    <div class="card-info-heading flex justify-content-between">
+                        <h3>Uptown 501</h3>
+                        <p>4.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <div class="description flex justify-content-between">
+                        <div>
+                            <p class="p1">North Indian, Chin..</p>
+                            <p>Dharampeth, Nagpur</p>
+                        </div>
+                        <div>
+                            <p>&#8377;1000 for two</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-two">
+                <div class="card-img flex">
+                    <img src="/images/order online.jpg" alt="">
+                </div>
+                <div class="card-info ">
+                    <div class="card-info-heading flex justify-content-between">
+                        <h3>Uptown 501</h3>
+                        <p>4.0 <i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <div class="description flex justify-content-between">
+                        <div>
+                            <p class="p1">North Indian, Chin..</p>
+                            <p>Dharampeth, Nagpur</p>
+                        </div>
+                        <div>
+                            <p>&#8377;1000 for two</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- ********************-->
+    <!--    about-section     -->
+    <!-- ********************-->
+
+    <section id="about-section">
+        <div class="container grid grid-four-coloum">
+            <div id="company">
+                <h4>COMPANY</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Hungiries Blog</a></li>
+                    <li><a href="#">Bug Bounty</a></li>
+                </ul>
+            </div>
+            <div id="contact">
+                <h4>CONTACT</h4>
+                <ul>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">Partner with us</a></li>
+                    <li><a href="#">Ride with us</a></li>
+                </ul>
+            </div>
+            <div id="legal">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Refund & Cancellation</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy/a></li>
+                    <li><a href="#">Offer Terms</a></li>
+                </ul>
+            </div>
+            <div id="download" class="play-btn flex">
+                <div class="googlePlay">
+                    <a href="#">
+                        <img src="/images/googlePlay.jpg" alt="">
+                    </a>
+                </div>
+                <div class="applePlay">
+                    <a href="#">
+                        <img src="/images/applePlay.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    <!-- ********************-->
+    <!--    footer-section     -->
+    <!-- ********************-->
+    <footer>
+        <div class="container grid grid-three-coloum">
+            <div class="logo logo1">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <div class="copy-right flex">
+                <h5>© 2022 Hungiries</h5>
+            </div>
+            <div class="social flex">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ********************-->
+    <!-- login & signUp Model-->
+    <!-- ********************-->    
+    <div class="model">
+        <div class="modal-wraper-one flex">
+            <div class="modal-content flex flex-coloum">
+                <i class="fa-solid fa-xmark close-one" name="close"></i>
+                <h2>LogIn Now</h2>
+                <form action="">
+                    <div class="log-in-info">
+                        <label for="email" style="display:block ;">Email</label>
+                        <input type="email" id="email" />
+                    </div>
+                    <div class="log-in-info">
+                        <label for="password" style="display:block ;">Password</label>
+                        <input type="password" id="password" />
+                    </div>
+                    <button class="logIn-btn">Login</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="model">
+        <div class="modal-wraper-two flex">
+            <div class="modal-content flex flex-coloum">
+                <i class="fa-solid fa-xmark close-two" name="close"></i>
+                <h2>SIGN UP</h2>
+                <form action="">
+                    <div class="log-in-info">
+                        <label for="name" style="display:block ;">Name</label>
+                        <input type="text" id="name" />
+                    </div>
+                    <div class="log-in-info">
+                        <label for="number" style="display:block ;">Phone No.</label>
+                        <input type="number" id="number" />
+                    </div>
+                    <div class="log-in-info">
+                        <label for="email" style="display:block ;">Email</label>
+                        <input type="email" id="email" />
+                    </div>
+                    <div class="log-in-info">
+                        <label for="password" style="display:block ;">Password</label>
+                        <input type="password" id="password" />
+                    </div>
+                    <button class="logIn-btn">Sign Up</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="/js/common.js"></script>
     <script src="/js/dinning.js"></script>
 
