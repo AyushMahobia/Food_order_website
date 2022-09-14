@@ -8,11 +8,15 @@ header {
 /* ************** */
 /* Home Section */
 /* ************** */
+.navigation ul .abc {
+    visibility: collapse;
+}
 
 .home {
     flex-direction: column;
     position: relative;
 }
+
 .sign-in {
     position: absolute;
     top: 0;
@@ -20,9 +24,10 @@ header {
     margin: 2rem 1rem;
 }
 
-.login-btn, .signup-btn{
+.login-btn,
+.signup-btn {
     padding: 0.6rem 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: pointer;
     background: none;
     border: none;
@@ -78,10 +83,26 @@ span {
     border: none;
     border-radius: 16px 0px 16px 0px;
     line-height: 48px;
-    min-width: 36rem;
+    min-width: 30rem;
     text-align: center;
     font-size: 1rem;
     transition: 0.7s ease;
+}
+
+@media (min-width : 38rem) {
+    .search-input {
+        min-width: 36rem;
+    }
+}
+@media (max-width : 30rem) {
+    .search-input {
+        min-width: 26rem;
+    }
+}
+@media (max-width : 27rem) {
+    .search-input {
+        min-width: 20rem;
+    }
 }
 
 .search-btn {
@@ -184,16 +205,19 @@ span {
     width: 100%;
     gap: 2rem;
 }
-.right-side .mobile-1{
+
+.right-side .mobile-1 {
     position: absolute;
     top: -4rem;
     left: -1rem;
 }
-.right-side .mobile-2{
+
+.right-side .mobile-2 {
     position: absolute;
     bottom: -4.2rem;
     right: 2rem;
 }
+
 .right-side img {
     max-width: 15rem;
 }

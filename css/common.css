@@ -97,9 +97,14 @@ p {
 
 main,
 section {
+    padding: 2rem 0rem 1rem;
+}
+@media (min-width: 40em) {
+    main,
+section {
     padding: 4rem 0rem 3rem;
 }
-
+}
 .container {
     max-width: 75rem;
     margin: 0px auto;
@@ -162,14 +167,14 @@ hr {
 
 #navbar ul li {
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 0 0.rem;
 }
 
 #navbar ul li a {
     color: var(--white);
     display: inline-block;
-    padding: 8px 22px;
+    padding: 0.6rem 0.7rem;
     border-radius: 20px;
     text-decoration: none;
     transition: .5s ease;
@@ -197,12 +202,17 @@ hr {
 }
 
 /********** responsive ness in navbar ************/
-@media(max-width: 62em) {
+@media(max-width: 64em) {
     /*width-980px */
     /* html{
         font-size: 80%;
     } */
-
+    .navigation ul .abc{
+        visibility: visible;
+    }
+    .xyz{
+        visibility: collapse;
+    }
     .mobile-navbar-btn {
         display: block;
         z-index: 999;
