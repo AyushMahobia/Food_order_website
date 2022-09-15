@@ -26,7 +26,7 @@ html {
     --paraFont: 'Josefin Sans', sans-serif;
     --blackOpacity: rgba(0, 0, 0, 0.3);
     --whiteOpacity: rgba(255, 255, 255, 0.3);
-    --lightGrey: #cecece;  
+    --lightGrey: #cecece;
 }
 
 h1,
@@ -39,11 +39,14 @@ h6 {
 }
 
 .z-index {
-    z-index: -1;
+    z-index: -99999;
+    visibility: collapse;
 }
-.over-hidden{
+
+.over-hidden {
     overflow: hidden;
 }
+
 p {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -54,7 +57,7 @@ p {
     align-items: center;
 }
 
-.gap{
+.gap {
     gap: 1.5rem;
 }
 
@@ -82,7 +85,8 @@ p {
     display: grid;
     gap: 2rem;
 }
-@media (min-width:45em){
+
+@media (min-width:45em) {
     .grid-two-coloum {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -91,19 +95,23 @@ p {
 .grid-three-coloum {
     grid-template-columns: repeat(auto-fill, minmax(11em, 1fr));
 }
+
 @media (min-width:55em) {
     .grid-three-coloum {
         grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
     }
 }
+
 @media (max-width:40em) {
     .grid-three-coloum {
         grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
     }
 }
+
 .grid-four-coloum {
     grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
 }
+
 @media (min-width:40em) {
     .grid-four-coloum {
         grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
@@ -115,22 +123,28 @@ main,
 section {
     padding: 2rem 0rem 1rem;
 }
+
 @media (min-width: 40em) {
+
     main,
-section {
-    padding: 4rem 0rem 3rem;
+    section {
+        padding: 4rem 0rem 3rem;
+    }
 }
-}
+
 .container {
     max-width: 75rem;
     margin: 0px auto;
 }
-.pos-absolute{
+
+.pos-absolute {
     position: absolute;
 }
-.pos-relative{
+
+.pos-relative {
     position: relative;
 }
+
 a {
     text-decoration: none;
     cursor: pointer;
@@ -166,9 +180,15 @@ hr {
 }
 
 .logo img {
-    max-width: 6rem;
+    max-width: 4rem;
     padding-top: 2px;
     filter: invert(1);
+}
+
+@media (min-width:40em) {
+    .logo img {
+        max-width: 6rem;
+    }
 }
 
 .navigation {
@@ -219,16 +239,14 @@ hr {
 
 /********** responsive ness in navbar ************/
 @media(max-width: 64em) {
-    /*width-980px */
-    /* html{
-        font-size: 80%;
-    } */
-    .navigation ul .abc{
+    .navigation ul .abc {
         visibility: visible;
     }
-    .xyz{
+
+    .xyz {
         visibility: collapse;
     }
+
     .mobile-navbar-btn {
         display: block;
         z-index: 999;
@@ -282,12 +300,14 @@ hr {
 
 /************* Model signin-login ***************/
 
-.model{
+.model {
     height: 100vh;
     width: 100wh;
     position: absolute;
 }
-.modal-wraper-one, .modal-wraper-two {
+
+.modal-wraper-one,
+.modal-wraper-two {
     background-color: var(--blackOpacity);
     height: 100%;
     width: 100%;
@@ -300,25 +320,27 @@ hr {
 }
 
 .modal-content {
-    background:linear-gradient(to left, #cecece, #22ffc0);
-    width: 550px ; 
+    background: linear-gradient(to left, #cecece, #22ffc0);
+    width: 550px;
     max-width: 90%;
     position: relative;
     box-shadow: 12px 12px 0px #ffa9a9, -12px -12px #ffa9a9;
     border: 2px solid black;
 }
-.modal-content h2{
+
+.modal-content h2 {
     font-size: 2rem;
     padding: 1rem;
 
 }
-.modal-content label{
+
+.modal-content label {
     font-size: 1.2rem;
     border: none;
 }
 
-.logIn-btn{
-   text-transform: uppercase;
+.logIn-btn {
+    text-transform: uppercase;
     margin: 15px 0 30px;
     width: 100%;
     padding: 5px 23px;
@@ -331,11 +353,11 @@ hr {
     transition: all 0.3s ease-in-out;
 }
 
-.logIn-btn:hover{
+.logIn-btn:hover {
     transform: scale(1.1);
 }
 
-.modal-content input{
+.modal-content input {
     border: none;
     border-radius: 5px;
     line-height: 1.8rem;
@@ -346,11 +368,12 @@ hr {
     transition: 0.5s ease;
 }
 
-.modal-content input:hover, .modal-content input:active{
+.modal-content input:hover,
+.modal-content input:active {
     box-shadow: 5px 5px 20px black;
 }
 
-.active-two{
+.active-two {
     transform: translateY(0%);
     pointer-events: auto;
 }
@@ -359,7 +382,8 @@ hr {
     pointer-events: auto;
 }
 
-.close-one, .close-two{
+.close-one,
+.close-two {
     position: absolute;
     top: 5px;
     right: 10px;
@@ -375,12 +399,9 @@ hr {
     padding-bottom: 0;
     padding-left: 1rem;
 }
-/* #about-section .container{
-    max-width: 60rem;
-} */
+
 #download {
     flex-direction: column-reverse;
-
 }
 
 #about-section h4 {
@@ -404,10 +425,11 @@ hr {
     color: var(--white);
 }
 
-#about-section .play-btn{
+#about-section .play-btn {
     align-items: flex-start;
     margin-bottom: 1rem;
 }
+
 .play-btn {
     width: 100%;
     gap: 2rem;
@@ -424,36 +446,41 @@ hr {
     border-radius: 5px;
     transition: all 0.4s ease;
 }
+
 @media (min-width:40em) {
-    .googlePlay img{
+    .googlePlay img {
         max-width: 10.8rem;
     }
-    .applePlay img{
+
+    .applePlay img {
         max-width: 10rem;
     }
-    
 }
+
 .play-btn img:hover {
     transform: scale(1.1);
 }
+
 /* footer */
 
 footer {
     background: var(--black);
     color: white;
-    /* padding:0.6rem 0 1rem; */
 }
+
 footer .container {
     gap: 1rem;
 }
 
-footer .logo1{
+footer .logo1 {
     width: inherit;
     padding: 0.3rem 0 0;
 }
-footer .logo1 img{
-    width: 3rem ;
+
+footer .logo1 img {
+    width: 3rem;
 }
+
 .copy-right h5 {
     font-size: 0.8rem;
     letter-spacing: 2px;
@@ -464,19 +491,23 @@ footer .logo1 img{
     color: var(--white);
     margin: 0 0.3rem;
 }
+
 @media (min-width: 40em) {
-    
-    .copy-right h5{
+
+    .copy-right h5 {
         font-size: 1.1rem;
     }
-    .social a i{
+
+    .social a i {
         font-size: 2rem;
         margin: 0 0.8rem;
     }
-    footer .logo1 img{
-        width: 6rem ;
+
+    footer .logo1 img {
+        width: 6rem;
     }
 }
+
 /*********** other pages common css **********/
 
 #option-section {
@@ -498,15 +529,17 @@ footer .logo1 img{
     transition: all 0.3s linear;
     letter-spacing: 1px;
 }
+
 @media (min-width:40em) {
-    .option a{
+    .option a {
         font-size: 1.4rem;
         margin-left: 1.5rem;
         border-bottom: 2px solid transparent;
         padding: 15px 15px;
     }
-    
+
 }
+
 .option a:hover {
     color: var(--sky);
     border-color: var(--sky);
@@ -550,10 +583,11 @@ footer .logo1 img{
 }
 
 @media (min-width:40em) {
-    #filters ul li button{
+    #filters ul li button {
         font-size: 0.8rem;
-    }  
-    #fliter-heading-section .container h1{
+    }
+
+    #fliter-heading-section .container h1 {
         font-size: 2rem;
-    } 
+    }
 }

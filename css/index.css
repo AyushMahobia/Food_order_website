@@ -8,36 +8,10 @@ header {
 /* ************** */
 /* Home Section */
 /* ************** */
-.navigation ul .abc {
-    visibility: collapse;
-}
 
 .home {
     flex-direction: column;
     position: relative;
-}
-
-.sign-in {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 2rem 1rem;
-}
-
-.login-btn,
-.signup-btn {
-    padding: 0.6rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: var(--white);
-    font-weight: 500;
-}
-
-.sign-in #sign-up button {
-    background-color: var(--black);
-    color: var(--sky);
 }
 
 .heading {

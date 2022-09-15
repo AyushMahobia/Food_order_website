@@ -10,13 +10,14 @@
 #card-section {
     background-color: var(--black);
     padding: 0rem 0rem 3rem;
+    /* visibility: collapse; */
 }
 
 .left-arrow,
 .right-arrow {
     max-width: 85px;
     max-height: 40px;
-    z-index: 99999;
+    z-index: 9;
     pointer-events: auto;
     cursor: pointer;
     border-radius: 40%;
@@ -42,36 +43,45 @@
 }
 
 #card-section h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: var(--sky);
     letter-spacing: 0.2rem;
     align-self: flex-start;
-    margin-bottom: 0.8rem;
+    margin: 0.8rem 1rem;
     font-weight: 100;
 }
 
 #card-section .description {
     align-self: flex-start;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
     color: var(--lightGrey);
-    margin: 1rem 0;
+    margin: 0.8rem 1rem 1rem;
+}
+
+@media (min-width:40em) {
+    #card-section h2 {
+        font-size: 2rem;
+    }
+
+    #card-section .description {
+        font-size: 1.3rem;
+    }
 }
 
 .card-list {
     display: flex;
     /* transform: translateX(-20.5rem); */
-    transform: translateX(0);
     transition: all 0.4s ease;
 }
 
 .card {
-    background-color: bisque;
     position: relative;
     max-width: 100%;
-    width: 17.25rem;
-    height: 20rem;
+    width: 11rem;
+    height: 15rem;
     overflow: hidden;
-    border-radius: 10px; 
+    border-radius: 10px;
     border: none;
 }
 
@@ -81,10 +91,12 @@
     object-fit: cover;
     transform: none;
     opacity: 1;
-    border: none; border-radius: 10px;
+    border: none;
+    border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
-.card img:hover{
+
+.card img:hover {
     transform: scale(1.1);
 }
 
@@ -96,15 +108,36 @@
     color: white;
     margin-bottom: 10px;
     padding: .5rem 1rem;
-    background:linear-gradient(to right,rgba(0,0,0), transparent);
+    background: linear-gradient(to right, rgba(0, 0, 0), transparent);
 }
 
-.card-info-one h3{
+.card-info-one h3 {
+    font-size: 0.9rem;
     font-weight: 100;
     letter-spacing: 0.1rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
 }
-
+.card-info-one p{
+    font-size: 0.8rem;
+}
+@media (min-width:24em) {
+    .card{
+        width: 12.95rem;
+        height: 17rem;
+    }
+}
+@media (min-width:40em) {
+    .card{
+        width: 17.25rem;
+        height: 20rem;
+    }
+    .card-info-one h3{
+        font-size: 1rem;
+    }
+    .card-info-one p{
+        font-size: 0.9rem;
+    }
+}
 /* second card-section (same as nightlife page)*/
 
 #card-section-two {

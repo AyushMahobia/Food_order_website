@@ -29,11 +29,11 @@ const login_btn = document.querySelector(".login-btn");
 const close_modal1 = document.querySelector(".close-one");
 const wrapper1 = document.querySelector(".modal-wraper-one");
 
-const signup_btn = document.querySelector("#sign-up");
+const signup_btn = document.querySelector(".sign-up");
 const wrapper2 = document.querySelector(".modal-wraper-two");
 const close_modal2 = document.querySelector(".close-two");
 
-// const
+
 const loginModal = () => {
     wrapper1.classList.add("active-two");
     wrapper1.addEventListener('wheel', preventScroll);
