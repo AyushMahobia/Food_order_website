@@ -50,8 +50,6 @@ header {
     text-align: center;
     font-size: 4rem;
     font-weight: 900;
-    /* z-index: -1; */
-
 }
 
 span {
@@ -82,40 +80,61 @@ span {
     outline: none;
     border: none;
     border-radius: 16px 0px 16px 0px;
-    line-height: 48px;
+    line-height: 40px;
     min-width: 30rem;
     text-align: center;
     font-size: 1rem;
     transition: 0.7s ease;
 }
 
-@media (min-width : 38rem) {
-    .search-input {
-        min-width: 36rem;
-    }
-}
-@media (max-width : 30rem) {
-    .search-input {
-        min-width: 26rem;
-    }
-}
-@media (max-width : 27rem) {
-    .search-input {
-        min-width: 20rem;
-    }
-}
-
 .search-btn {
     position: absolute;
     right: -2px;
     top: -1px;
+    font-size: 18px;
     padding: 12px;
     text-decoration: none;
     background: transparent;
     border-radius: 0px 0px 16px 0px;
     color: var(--sky);
     transition: 0.4s ease;
+}
 
+@media (min-width : 38em) {
+    .search-input {
+        min-width: 36rem;
+        line-height: 48px;
+    }
+
+    .search-btn {
+        font-size: 26px;
+    }
+}
+
+@media (max-width : 30em) {
+    .search-input {
+        min-width: 26rem;
+    }
+
+    .heading h1 {
+        font-size: 3rem;
+    }
+
+    .heading p {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width : 27em) {
+    .search-input {
+        min-width: 20rem;
+        font-size: 0.7rem;
+    }
+
+    .heading p {
+        font-size: 1.2rem;
+    }
 }
 
 .search-box:hover>.search-btn {
@@ -157,24 +176,37 @@ span {
 }
 
 .card-info h3 {
-    color: #22ffc0;
-    font-size: 1.7rem;
-    margin: .5rem 0 1rem;
+    color: var(--sky);
+    font-size: 1.1rem;
+    margin: .3rem 0 0.6rem;
     font-weight: 100;
+    word-spacing: 3px;
 }
 
 .card-info p {
-    color: white;
-    font-size: 1rem;
-    margin-bottom: .5rem;
-    letter-spacing: 2px;
+    color: var(--white);
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin-bottom: .3rem;
+    letter-spacing: 1px;
+}
+
+@media (min-width:40em) {
+    .card-info h3 {
+        font-size: 1.5rem;
+        margin: .5rem 0 1rem;
+    }
+
+    .card-info p {
+        font-size: 0.9rem;
+    }
 }
 
 /* app section */
 
 #app-section {
     background: var(--darkGrey);
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .left-side {
@@ -186,18 +218,20 @@ span {
 
 .left-side h2 {
     color: var(--sky);
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 2px;
     margin-bottom: 1.5rem;
     align-self: flex-start;
+    margin-right: 1rem;
 }
 
 .left-side p {
     color: var(--white);
     letter-spacing: 1px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 3rem;
     line-height: 2rem;
+    margin-right: 1rem;
 }
 
 .right-side {
@@ -206,18 +240,36 @@ span {
     gap: 2rem;
 }
 
-.right-side .mobile-1 {
-    position: absolute;
-    top: -4rem;
-    left: -1rem;
-}
-
-.right-side .mobile-2 {
-    position: absolute;
-    bottom: -4.2rem;
-    right: 2rem;
-}
-
 .right-side img {
-    max-width: 15rem;
+    max-width: 0rem;
+}
+
+@media (min-width:45em) {
+    #app-section {
+        padding: 4rem 0;
+    }
+
+    .right-side .mobile-1 {
+        position: absolute;
+        top: -4rem;
+        left: -1rem;
+    }
+
+    .right-side .mobile-2 {
+        position: absolute;
+        bottom: -4.2rem;
+        right: 2rem;
+    }
+
+    .right-side img {
+        max-width: 15rem;
+    }
+
+    .left-side h2 {
+        font-size: 3rem;
+    }
+
+    .left-side p {
+        font-size: 1.3rem;
+    }
 }

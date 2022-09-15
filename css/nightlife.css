@@ -18,6 +18,7 @@
     border: 2px solid var(--lightGrey);
     background: var(--blackOpacity);
     cursor: pointer;
+   
 }
 
 .card-img img {
@@ -30,10 +31,13 @@
     margin: 0.1rem 1rem 1rem;
     color: var(--white);
 }
+.description p{
+    font-size: 0.8rem;
+}
 
 .card-info-heading h3 {
     color: var(--sky);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 100;
     letter-spacing: 1px;
 }
@@ -41,7 +45,7 @@
 .card-info-heading p {
     background-color: rgb(20, 143, 20);
     padding: 4px 10px;
-    /* font-size: 1rem; */
+    font-size: 0.6rem;
     font-weight: 900;
     border-radius: 10px;
 }
@@ -49,7 +53,23 @@
 .p1 {
     margin-bottom: 10px;
 }
-
+/* .grid-three-coloum{
+    grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+} */
+@media (min-width:52em) {
+    .description p{
+        font-size: 0.8rem;
+    }  
+    .card-info-heading h3 {
+        font-size: 1.4rem;
+    }
+    .card-info-heading p{
+        font-size: 1rem;
+    }
+    /* .grid-three-coloum{
+        grid-template-columns: repeat(auto-fill, minmax(11em, 1fr));
+    } */
+}
 /* about-section */
 
 #about-section {
