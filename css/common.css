@@ -182,7 +182,7 @@ hr {
 .logo img {
     max-width: 4rem;
     padding-top: 2px;
-    /* filter: invert(1); */
+    filter: invert(1);
 }
 
 @media (min-width:40em) {
